@@ -6,6 +6,8 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -44,7 +46,16 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="116.0" layoutY="67.0" text="传感器" />
+                        <TableView prefHeight="346.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn prefWidth="115.0" text="所在位置" />
+                            <TableColumn prefWidth="56.0" text="节点编号" />
+                              <TableColumn prefWidth="94.0" text="工作状态" />
+                              <TableColumn prefWidth="148.0" text="故障类型" />
+                              <TableColumn prefWidth="71.0" text="负责人" />
+                              <TableColumn prefWidth="115.0" text="联系电话" />
+                          </columns>
+                        </TableView>
                      </children></AnchorPane>
             </content>
           </Tab>
@@ -60,7 +71,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="224.0" layoutY="90.0" text="快速查找" />
+                        <VBox layoutY="-1.0" prefHeight="347.0" prefWidth="600.0" />
                      </children></AnchorPane>
               </content>
             </Tab>
