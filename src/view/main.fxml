@@ -16,9 +16,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <MenuBar prefHeight="50.0" prefWidth="600.0">
+      <MenuBar prefHeight="50.0" prefWidth="1000.0">
         <menus>
           <Menu mnemonicParsing="false" text="系统管理">
             <items>
@@ -37,21 +37,18 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TabPane prefHeight="393.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane prefHeight="393.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="查看铁路故障">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="600.0">
-                     <children>
-                        <Label layoutX="14.0" layoutY="14.0" text="铁路故障" />
-                     </children></AnchorPane>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="1000.0" />
             </content>
           </Tab>
           <Tab text="查看传感器故障">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="347.0" prefWidth="606.0">
+                        <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="347.0" prefWidth="1000.0">
                           <columns>
                             <TableColumn prefWidth="115.0" text="所在位置" />
                             <TableColumn prefWidth="56.0" text="节点编号" />
@@ -79,7 +76,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <VBox layoutY="-1.0" prefHeight="347.0" prefWidth="600.0">
+                        <VBox layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="347.0" prefWidth="1000.0">
                            <children>
                               <HBox>
                                  <children>
@@ -89,7 +86,7 @@
                                        </font></TextField>
                                     <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="72.0" text="搜索" />
                                  </children></HBox>
-                              <HBox prefHeight="38.0" prefWidth="600.0">
+                              <HBox prefHeight="38.0" prefWidth="1000.0">
                                  <children>
                                     <Label text="查询结果如下：">
                                        <font>
@@ -97,9 +94,9 @@
                                        </font>
                                     </Label>
                                  </children></HBox>
-                              <HBox prefHeight="272.0" prefWidth="600.0">
+                              <HBox prefHeight="272.0" prefWidth="1000.0">
                                  <children>
-                                    <TableView>
+                                    <TableView prefHeight="271.0" prefWidth="1000.0">
                                       <columns>
                                         <TableColumn prefWidth="180.0" text="工作状态" />
                                         <TableColumn prefWidth="191.0" text="负责人" />
@@ -124,24 +121,24 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <VBox>
+                        <VBox maxWidth="1.7976931348623157E308" prefWidth="1000.0">
                            <children>
-                              <HBox prefHeight="27.0" prefWidth="600.0">
+                              <HBox prefHeight="27.0" prefWidth="1000.0">
                                  <children>
                                     <ChoiceBox prefHeight="28.0" prefWidth="160.0" />
                                  </children>
                               </HBox>
                            </children>
                         </VBox>
-                        <HBox layoutY="27.0" prefHeight="316.0" prefWidth="600.0">
+                        <HBox layoutY="27.0" maxWidth="1.7976931348623157E308" prefHeight="316.0" prefWidth="1000.0">
                            <children>
-                              <TableView prefHeight="316.0" prefWidth="602.0">
+                              <TableView prefHeight="316.0" prefWidth="1000.0">
                                 <columns>
-                                  <TableColumn prefWidth="78.0" text="故障编号" />
-                                  <TableColumn prefWidth="93.0" text="故障类型" />
-                                    <TableColumn prefWidth="109.0" text="处理时间" />
-                                    <TableColumn prefWidth="193.0" text="处理进展" />
-                                    <TableColumn prefWidth="126.0" text="完成时间" />
+                                  <TableColumn prefWidth="216.0" text="故障编号" />
+                                  <TableColumn prefWidth="189.0" text="故障类型" />
+                                    <TableColumn prefWidth="156.0" text="处理时间" />
+                                    <TableColumn prefWidth="175.0" text="处理进展" />
+                                    <TableColumn prefWidth="264.0" text="完成时间" />
                                 </columns>
                               </TableView>
                            </children>
