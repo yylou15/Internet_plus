@@ -12,7 +12,7 @@
 
 <VBox alignment="CENTER" fillWidth="false" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.login">
    <children>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="298.0">
          <children>
             <Label alignment="TOP_LEFT" text="Welcome" textAlignment="CENTER">
                <font>
