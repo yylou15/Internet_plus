@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
    <children>
       <MenuBar prefHeight="50.0" prefWidth="1000.0">
         <menus>
@@ -41,7 +41,18 @@
         <tabs>
           <Tab text="查看铁路故障">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="1000.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="1000.0">
+                     <children>
+                        <TableView fx:id="checkProblemsTable" prefHeight="347.0" prefWidth="1000.0">
+                          <columns>
+                            <TableColumn fx:id="trainPart" prefWidth="202.00001525878906" text="铁路局段" />
+                            <TableColumn fx:id="num" minWidth="0.0" prefWidth="216.0" text="路段编号" />
+                              <TableColumn fx:id="statusName" prefWidth="179.0" text="工作状态" />
+                              <TableColumn fx:id="charger" prefWidth="94.0" text="负责人" />
+                              <TableColumn fx:id="phone" prefWidth="307.0" text="联系电话" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
             </content>
           </Tab>
           <Tab text="查看传感器故障">
@@ -68,7 +79,28 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="234.0" layoutY="41.0" text="员工档案" />
+                        <VBox prefHeight="343.0" prefWidth="1000.0">
+                           <children>
+                              <HBox prefHeight="48.0" prefWidth="996.0">
+                                 <children>
+                                    <TextField maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="48.0" prefWidth="237.0" promptText="输入姓名或工号快速查找" />
+                                    <Button fx:id="menDocButton" maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0">
+                                       
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="554.0" prefWidth="1000.0">
+                                <columns>
+                                  <TableColumn prefWidth="152.00001525878906" text="姓名" />
+                                  <TableColumn prefWidth="151.0" text="工号" />
+                                    <TableColumn prefWidth="172.0" text="负责区段" />
+                                    <TableColumn prefWidth="176.0" text="工作评分" />
+                                    <TableColumn minWidth="0.0" prefWidth="138.0" text="在职状态" />
+                                    <TableColumn prefWidth="210.0" text="季度检修次数" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </VBox>
                      </children></AnchorPane>
               </content>
             </Tab>
@@ -113,7 +145,12 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="190.0" layoutY="56.0" text="状态更新" />
+                        <Button fx:id="updateStatusButton" layoutX="454.0" layoutY="125.0" mnemonicParsing="false" prefHeight="94.0" prefWidth="94.0" />
+                        <Label layoutX="400.0" layoutY="64.0" prefHeight="61.0" prefWidth="201.0" text="点击获取最新维护信息" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
                      </children></AnchorPane>
               </content>
             </Tab>
